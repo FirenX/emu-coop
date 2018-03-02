@@ -91,8 +91,6 @@ guid = "fe302609-5d04-4f17-ab56-f358f8a6ad8d",
 		[0x7EF349] = {name="Quake", kind="high"},
 		[0x7EF34A] = {name="Lantern", kind="high"},
 		[0x7EF34B] = {name="Hammer", kind="high"},
-		-- Note this doesn't need to happen in INVENTORY_SWAP receiveTrigger bc you can only upgrade the flute while holding it
-		[0x7EF34C] = {kind=zeroRisingOrUpgradeFlute},       -- Shovel flute etc, tracked in INVENTORY_SWAP
 		[0x7EF34D] = {name="Net", kind="high"},
 		[0x7EF34E] = {name="Book", kind="high"},
 		[0x7EF34F] = {kind="high"}, -- Bottle count
