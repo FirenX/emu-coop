@@ -45,7 +45,10 @@ function recordChanged(record, value, previousValue, receiving,addr)
 					healthRefill = 8
 					memory.writebyte(0x7EF372, healthRefill)
 					memory.writebyte(0x7EF36D, value)
+				else
+					value = math.min(value,maxHealth)
 				end
+				
 				allow = value ~= previousValue
 			end
 		else
